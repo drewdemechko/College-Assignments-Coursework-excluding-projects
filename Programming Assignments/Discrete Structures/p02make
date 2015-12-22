@@ -1,0 +1,19 @@
+#Author Identification Block
+#Author:        Mr. Drew Demechko
+#Student ID:    *20348325
+#E-Mail:        ddemechko@uco.edu
+#Course:        CMSC 2123 - Discrete Structures
+#CRN:           11786 Fall 2015
+#Project:       p02
+#Due:           September 18, 2015
+#Account:       tt009
+
+#file p02make
+
+obj	=	p02.o List02.o
+p02:		${obj}
+		g++ -o p02 ${obj} -lm
+p02.o:		p02.cpp List02.h
+		g++ -g -c p02.cpp
+List02.o:	List02.cpp List02.h
+		g++ -g -c List02.cpp
